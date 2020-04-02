@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="assets/images/index-meta.png">
+  <meta property="og:image" content="assets/images/index-meta.png">
+  <meta name="twitter:title" content="ESFNA Home page">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/esfna-footer-logo-108x61.png" type="image/x-icon">
+  <meta name="description" content="ESFNA is an organization dedicated to promote amateur soccer and cultural events within the Ethiopian community in North America.">
+  
+  <title>ESFNA Home page</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/facebook-plugin/style.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="assets/datepicker/jquery.datetimepicker.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  <meta http-equiv="Pragma" content="no-cache">
+
+</head>
+<body>
+
+<!-- Analytics -->
+<script>
+// JavaScript source code
+function showResult(text)
+{
+    //document.getElementById('vendormessage').innerHTML = text;
+       alert(text);
+}
+function handleLogin() {
+    return function () {
+         alert("Su");
+        var objFormdata = {};
+        var formData = document.getElementById("pfrmlogin");
+        const myData = new URLSearchParams();
+        myData.append('email', this.email_pfrmlogin);
+        myData.append('password', this.password_pfrmlogin);
+        myData.append('username', this.username_pfrmlogin);
+
+        for (const pair of new FormData(formData)) {
+            myData.append(pair[0], pair[1]);
+        }
+
+        fetch('http://localhost:8080/api/users/login', {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            mode: 'no-cors',
+            method: 'post',
+            body: JSON.stringify(myData)
+        })
+            .then(response => response.text())
+            .then(text => showResult("text"))
+            .catch(error => showResult("error"));
+    }
+}
+</script>
+<!-- /Analytics -->
+
+
+  <section class="menu cid-rTdKIb539X" once="menu" id="menu1-2m">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="http://esfna.org">
+                         <img src="assets/images/esfna-footer-logo-108x61.png" alt="" title="" style="height: 4.9rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html" target="_blank">HOME</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="index.html">
+                        HOME</a>
+                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="aboutus.html">ABOUT</a></li>
+                <li class="nav-item dropdown"><a class="nav-link link dropdown-toggle text-white display-4" href="vendor.html" data-toggle="dropdown-submenu" aria-expanded="false">ESFNA COVID-19 </a><div class="dropdown-menu"><a class="dropdown-item text-white display-4" href="esfna-covid19.html">About COVID-19</a><a class="dropdown-item text-white display-4" href="esfna-covid19.html">Steps to protect yourself</a><a class="dropdown-item text-white display-4" href="esfna-covid19.html">ESFNA's bold initiative</a><a class="dropdown-item text-white display-4" href="esfna-covid19.html">Matching fund intiiative</a></div></li><li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="vendor.html" aria-expanded="true" data-toggle="dropdown-submenu">TEAM</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="page9.html" aria-expanded="false">Register Team</a><a class="text-white dropdown-item display-4" href="page10.html" aria-expanded="false">Player Registration</a></div></li><li class="nav-item"><a class="nav-link link text-white display-4" href="popup:#mbr-popup-65" aria-expanded="false" data-toggle="modal" data-target="#mbr-popup-65"><span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>LOGIN</a></li></ul>
+            
+        </div>
+    </nav>
+</section>
+
+<section class="header6 cid-rTdKIfD6tK mbr-fullscreen mbr-parallax-background" id="header6-2n">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(8, 9, 9);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            
+            <div class="mbr-white col-md-10">
+                 
+                
+                
+                <p class="mbr-text align-center pb-3 mbr-fonts-style display-2"><strong>
+                    ESFNA decided to take part and contribute what it can in combating this dreadful pandemic.
+                </strong></p>
+                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-success display-4" href="#">ABOUT COVID-19</a>
+                        <a class="btn btn-md btn-success display-4" href="#">PROTECT YOURSELF</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+<section class="extSlider testimonials-slider cid-rTdKIjeSmr mbr-parallax-background" data-interval="false" id="extSlider2-2o">
+     
+
+    
+    <div class="main container">
+         <div class="card-box col-md-8">
+                      <!---  <p class="card-title mbr-fonts-style pb-5 mbr-bold" mbr-theme-style="display-2" data-app-selector=".card-title" mbr-if="showTitle"><span style="color:#ffffff;">ESFNA</span>&nbsp;<span style="color:#ffcc00;">2020</span></p -->
+        </div>
+        <div class="row">
+            <div class="first-col col-md-6">
+               
+
+           <p class="card-title mbr-fonts-style pb-5 mbr-bold display-2"><span style="color:#ffffff;">ESFNA</span> <span style="color:#ffcc00;">2020</span> </p>
+                       <p class="mbr-text mbr-fonts-style mbr-normal display-4"><span style="color:#b6b6b6;">
+                            Happy 37th Ethiopian Sports and Cultural Federation of North America</span><span style="color:#ffcc00;"> cancelled as the coronavirus spreads globally, it has caused a major impact on the sports world. </span><br><span style="color:#b6b6b6;">
+
+We hope this postponement puts us in the best position to safely host the future tournaments and severe our community during this difficuly times.</span> </p> <p><a class="btn btn-md btn-success-outline" href="aboutus.html">READ MORE</a></p>
+               
+            </div>  
+            
+            <div class="second-col col-md-6">
+                <div class="carousel slide slides" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" class="active"></li>
+                        <li data-slide-to="1"></li>
+                        <li data-slide-to="2"></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ol>
+                    <div class="carousel-inner">
+
+                        
+                    
+                        
+
+                        
+                    <div class="carousel-item ">
+                            <div class="media-container-row">
+                                <div class="col-md-12">
+                                    <div class="wrap-img ">
+                                        <img src="assets/images/esfna2020-2-476x317.png" class="img-responsive clients-img" alt="" title="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="carousel-item ">
+                            <div class="media-container-row">
+                                <div class="col-md-12">
+                                    <div class="wrap-img ">
+                                        <img src="assets/images/esfna2020-3-600x400.png" class="img-responsive clients-img" alt="" title="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="carousel-item ">
+                            <div class="media-container-row">
+                                <div class="col-md-12">
+                                    <div class="wrap-img ">
+                                        <img src="assets/images/esfna2020-1-600x400.png" class="img-responsive clients-img" alt="" title="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>   
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="extFeatures cid-rTdKIvVNYI" id="extFeatures33-2q">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                
+
+            </div>
+        </div>
+        <div class="row row-content justify-content-center">
+            <div class="card p-3 col-12 col-md-12">
+                <div class="row card-wrapper">
+                    <div class=" col-md-4 card-img">
+                        
+                        <img src="assets/images/welcome-img-1-649x684.jpg" title="" alt="">
+                    </div>
+                    <div class="card-box col-md-8">
+                        <p class="card-title mbr-fonts-style pb-5 mbr-bold display-2"><span style="color:#ffffff;">ABOUT</span> <span style="color:#ffcc00;">ESFNA</span> </p>
+                        <p class="mbr-text mbr-fonts-style mbr-normal display-4">
+                            The Ethiopian Sports Federation in North America (ESFNA) is a non-profit organization founded in 1984 to promote amateur soccer and cultural events within the Ethiopian community in North America.  &nbsp;</p>
+                        <p>
+                       </p><p><a class="btn btn-md btn-success-outline" href="aboutus.html">READ MORE</a></p>
+
+                        
+
+                           
+                        
+                </div>
+                   </div>
+
+
+            </div>
+
+            
+
+
+
+            
+
+
+        </div>
+    
+</div></section>
+
+<div class="modal mbr-popup cid-rUsBaA2Fsk fade" tabindex="-1" role="dialog" data-overlay-color="#000000" data-overlay-opacity="0.8" id="mbr-popup-65" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mbr-fonts-style display-5">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M31.797 0.191c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.598 0.581 0.342 1.543 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM14.472 17.515c-0.264-0.256-0.686-0.25-0.942 0.015l-13.328 13.326c-0.613 0.595 0.34 1.562 0.942 0.942l13.328-13.326c0.27-0.262 0.27-0.695 0-0.957zM1.144 0.205c-0.584-0.587-1.544 0.336-0.942 0.942l30.654 30.651c0.613 0.625 1.563-0.325 0.942-0.942z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    
+
+                    <div>
+                        
+                            
+
+                            <div class="form-wrapper" data-form-type="formoid">
+<!--Formbuilder Form-->
+<form action="http://localhost:8080/api/users/login" onsubmit="handleLogin();" method="POST" class="mbr-form form-with-styler">
+<div class="">
+
+<div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+</div>
+</div>
+<div class="dragArea">
+<div class="col-lg-10 col-md-12 col-sm-12 form-group" data-for="username">
+<input type="text" name="username" placeholder="username" data-form-field="Name" required="required" class="form-control display-7" value="" id="username-mbr-popup-65">
+</div>
+<div class="col-lg-10 col-md-12 col-sm-12 form-group" data-for="password">
+<input type="text" name="password" placeholder="password" data-form-field="password" required="required" class="form-control display-7" value="" id="password-mbr-popup-65">
+</div>
+<div data-for="email" class="col-lg-10 col-md-12 col-sm-12 form-group">
+<input type="text" name="email" placeholder="Email" data-form-field="email" class="form-control display-7" required="required" value="" id="email-mbr-popup-65">
+</div>
+<div class="col-md-auto input-group-btn">
+<button type="submit" class="btn btn-success display-4">LOGIN</button>
+</div>
+</div>
+</form><!--Formbuilder Form-->
+</div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script>
+  <script src="https://apis.google.com/js/plusone.js"></script>
+  <script src="assets/facebook-plugin/facebook-script.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/popup-overlay-plugin/script.js"></script>
+  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+  <script src="assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
+  <script src="assets/formstyler/jquery.formstyler.js"></script>
+  <script src="assets/formstyler/jquery.formstyler.min.js"></script>
+  <script src="assets/datepicker/jquery.datetimepicker.full.js"></script>
+  <script src="assets/popup-plugin/script.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  <script>
+function handleClick2() 
+{
+alert("Test");
+}
+	document.getElementById("loginsubmit").addEventListener('click', handleClick2());
+</script>
+  <input name="animation" type="hidden">
+  
+</body>
+</html>
