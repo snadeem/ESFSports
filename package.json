@@ -4,14 +4,14 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
-    "dev": "node --exec babel-node src/index.js",
-    "build-server": "babel -d ./build ./src -s",
-    "build": "npm run clean && npm run build-server",
-    "start": "node ./build/index.js",
-    "debug": "node --debug ./build/index.js"
-  },
-  "license": "MIT",
-  
+        "dev": "node --exec babel-node src/index.js",
+        "transpile": "babel ./src --out-dir build",
+            "build-server": "babel -d ./build ./src -s",
+                "build": "npm run clean && npm run build-server",
+                    "start": "node ./build/index.js",
+                        "debug": "node --debug ./build/index.js"
+},
+  "license": "MIT",  
   "dependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.7.0",
