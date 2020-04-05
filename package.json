@@ -6,7 +6,7 @@
     "clean": "rm -rf build && mkdir build",
         "dev": "node --exec babel-node src/index.js",
            "build-server": "babel -d ./build ./src -s",
-                "build": "npm run clean && npm run build-server",
+                "build": "babel server --out-dir build --presets=es2015 && npm run clean && npm run build-server",
                     "start": "node ./build/index.js",
                         "debug": "node --debug ./build/index.js"
 },
