@@ -30,6 +30,9 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
+    "@babel/core":"^7.9.0",
+"@babel/preset-env":"^7.9.0",
+"@babel/register":"7.9.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-prettier": "^3.0.1"
