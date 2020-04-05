@@ -4,13 +4,13 @@
   "main": "start.js",
   "scripts": {
     "clean": "rm -rf build && mkdir build",
-        "dev": "node --exec babel-node src/index.js",
-           "build-server": "babel -d ./build ./src -s",              
-            "build": "npm run clean && npm run build-server",
-                    "start": "node ./build/start.js",
-                        "debug": "node --debug ./build/index.js"
-},
-  "license": "MIT",  
+    "dev": "node babel-node ./src/index.js",
+    "build-server": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-server",
+    "start": "node ./build/start.js",
+    "debug": "node --debug ./build/index.js"
+  },
+  "license": "MIT",
   "dependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.7.0",
@@ -27,12 +27,13 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.15.1",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
-    "@babel/core":"^7.9.0",
-"@babel/preset-env":"^7.9.0",
-"@babel/register":"7.9.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-prettier": "^3.0.1"
