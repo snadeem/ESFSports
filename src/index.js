@@ -1,12 +1,19 @@
-import express from 'express';
+/*import express from 'express';
 import passport from 'passport';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import models from './models'
 import {
     createUser, create
-} from './controllers/user';
+} from './controllers/user'; */
 
+
+const passport = require('passport');
+const bodyParser = require('body-parser');
+const models = require('cors');
+const cors = require('./models');
+const createUser = require('./controllers/user');
+const create = require('./controllers/user');
 const app = express();
 
 app.use(bodyParser.json());
