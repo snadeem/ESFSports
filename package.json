@@ -2,7 +2,7 @@
   "name": "EFS",
   "version": "1.0.1",
   "main": "index.js",
-  scripts": {
+  "scripts": {
       "clean": "rm -rf build && mkdir build",
       "dev": "nodemon babel-node src/index.js",
       "build-server": "babel -d ./build ./src -s",
