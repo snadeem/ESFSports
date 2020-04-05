@@ -2,14 +2,14 @@
   "name": "EFS",
   "version": "1.0.1",
   "main": "index.js",
-  "scripts": {
-    "clean": "rm -rf build && mkdir build",
-    "dev": "node babel-node ./src/index.js",
-    "build-server": "babel -d ./build ./src -s",
-    "build": "npm run clean && npm run build-server",
-    "start": "node --require babel-register ./build/index.js",
-    "debug": "node --debug ./build/index.js"
-  },
+  scripts": {
+      "clean": "rm -rf build && mkdir build",
+      "dev": "nodemon babel-node src/index.js",
+      "build-server": "babel -d ./build ./src -s",
+      "build": "npm run clean && npm run build-server",
+      "start": "node ./build/index.js",
+      "debug": "node --debug ./build/index.js"
+    },
   "license": "MIT",
   "dependencies": {
     "babel-cli": "6.26.0",
