@@ -1,4 +1,4 @@
-import bcrypt from 'bcryptjs';
+/*import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import passport from 'passport';
 
@@ -7,8 +7,18 @@ const User = db.User;
 
 // load input validation
 import validateRegisterForm from '../validation/register';
-import validateLoginForm from '../validation/login';
+import validateLoginForm from '../validation/login';*/
 
+const bcrypt = require( 'bcryptjs');
+const jwt = require( 'jsonwebtoken');
+const passport = require( 'passport');
+
+const db = require( '../models');
+const User = db.User;
+
+// load input validation
+import validateRegisterForm = require( '../validation/register');
+import validateLoginForm = require( '../validation/login');
 // create some helper functions to work on the database
 
 
