@@ -17,8 +17,8 @@ const db = require( '../models');
 const User = db.User;
 
 // load input validation
-import validateRegisterForm = require( '../validation/register');
-import validateLoginForm = require( '../validation/login');
+const validateRegisterForm = require( '../validation/register');
+const validateLoginForm = require( '../validation/login');
 // create some helper functions to work on the database
 
 
